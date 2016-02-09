@@ -1,2 +1,2 @@
 # ReadCGNS
-Reader for CGNS data.
+CGNS data reader with KVS.
