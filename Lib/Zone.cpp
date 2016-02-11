@@ -14,7 +14,7 @@
 /*****************************************************************************/
 #include "Zone.h"
 #include "Base.h"
-#include "CGNS.h"
+#include "CGNSData.h"
 
 
 namespace local
@@ -23,7 +23,7 @@ namespace local
 namespace cgns
 {
 
-Zone::Zone( const cgns::Base& parent ):
+Zone::Zone( const Zone::Parent& parent ):
     m_parent( parent ),
     m_index( 0 ),
     m_id( 0.0 ),

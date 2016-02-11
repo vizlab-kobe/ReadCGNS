@@ -12,7 +12,7 @@
  *  $Id$
  */
 /*****************************************************************************/
-#include "CGNS.h"
+#include "CGNSData.h"
 #include "CGNSLib.h"
 #include <kvs/Message>
 
@@ -20,13 +20,13 @@
 namespace local
 {
 
-CGNS::CGNS():
+CGNSData::CGNSData():
     m_handler( 0 ),
     m_version( 0.0f )
 {
 }
 
-CGNS::CGNS( const std::string& filename ):
+CGNSData::CGNSData( const std::string& filename ):
     m_handler( 0 ),
     m_version( 0.0f )
 {
@@ -36,7 +36,7 @@ CGNS::CGNS( const std::string& filename ):
     }
 }
 
-void CGNS::print( std::ostream& os, const kvs::Indent& indent ) const
+void CGNSData::print( std::ostream& os, const kvs::Indent& indent ) const
 {
     os << indent << "Version: " << this->version() << std::endl;
 
@@ -48,7 +48,7 @@ void CGNS::print( std::ostream& os, const kvs::Indent& indent ) const
     }
 }
 
-bool CGNS::read( const std::string& filename )
+bool CGNSData::read( const std::string& filename )
 {
     const int mode = CG_MODE_READ;
     CGNS_CALL( cg_open( filename.c_str(), mode, &m_handler ) );

@@ -15,7 +15,7 @@
 /*****************************************************************************/
 #include "Grid.h"
 #include "CGNSLib.h"
-#include "CGNS.h"
+#include "CGNSData.h"
 #include "Base.h"
 #include "Zone.h"
 
@@ -26,7 +26,7 @@ namespace local
 namespace cgns
 {
 
-Grid::Grid( const cgns::Zone& parent ):
+Grid::Grid( const Grid::Parent& parent ):
     m_parent( parent ),
     m_index( 0 ),
     m_name( "" )

@@ -13,7 +13,7 @@
  */
 /*****************************************************************************/
 #include "Coord.h"
-#include "CGNS.h"
+#include "CGNSData.h"
 #include "Base.h"
 #include "Zone.h"
 
@@ -24,7 +24,7 @@ namespace local
 namespace cgns
 {
 
-Coord::Coord( const cgns::Zone& parent ):
+Coord::Coord( const Coord::Parent& parent ):
     m_parent( parent ),
     m_index( 0 ),
     m_data_type( DataTypeNull ),

@@ -52,7 +52,7 @@ private:
     std::vector<cgns::Solution> m_solutions;
 
 public:
-    Zone( const cgns::Base& parent );
+    Zone( const Parent& parent );
 
     const Parent& parent() const { return m_parent; }
     int index() const { return m_index; }

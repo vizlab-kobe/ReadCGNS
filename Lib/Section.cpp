@@ -13,7 +13,7 @@
  */
 /*****************************************************************************/
 #include "Section.h"
-#include "CGNS.h"
+#include "CGNSData.h"
 #include "Base.h"
 #include "Zone.h"
 
@@ -24,7 +24,7 @@ namespace local
 namespace cgns
 {
 
-Section::Section( const cgns::Zone& parent ):
+Section::Section( const Section::Parent& parent ):
     m_parent( parent ),
     m_index( 0 ),
     m_name( "" ),

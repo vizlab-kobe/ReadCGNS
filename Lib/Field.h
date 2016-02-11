@@ -42,7 +42,7 @@ private:
     kvs::AnyValueArray m_values;
 
 public:
-    Field( const cgns::Solution& parent );
+    Field( const Parent& parent );
 
     const Parent& parent() const { return m_parent; }
     int index() const { return m_index; }

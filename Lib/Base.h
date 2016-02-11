@@ -25,7 +25,7 @@
 namespace local
 {
 
-class CGNS;
+class CGNSData;
 
 namespace cgns
 {
@@ -33,7 +33,7 @@ namespace cgns
 class Base
 {
 public:
-    typedef local::CGNS Parent;
+    typedef local::CGNSData Parent;
 
 private:
     const Parent& m_parent;
@@ -46,7 +46,7 @@ private:
     std::vector<cgns::Zone> m_zones;
 
 public:
-    Base( const local::CGNS& parent );
+    Base( const Parent& parent );
 
     const Parent& parent() const { return m_parent; }
     int index() const { return m_index; }

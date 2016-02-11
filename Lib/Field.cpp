@@ -13,7 +13,7 @@
  */
 /*****************************************************************************/
 #include "Field.h"
-#include "CGNS.h"
+#include "CGNSData.h"
 #include "Base.h"
 #include "Zone.h"
 #include "Solution.h"
@@ -25,7 +25,7 @@ namespace local
 namespace cgns
 {
 
-Field::Field( const cgns::Solution& parent ):
+Field::Field( const Field::Parent& parent ):
     m_parent( parent ),
     m_index( 0 ),
     m_data_type( DataTypeNull ),

@@ -44,7 +44,7 @@ private:
     std::vector<cgns::Field> m_fields;
 
 public:
-    Solution( const cgns::Zone& parent );
+    Solution( const Parent& parent );
 
     const Parent& parent() const { return m_parent; }
     int index() const { return m_index; }

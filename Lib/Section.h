@@ -46,7 +46,7 @@ private:
     kvs::ValueArray<cgsize_t> m_elements;
 
 public:
-    Section( const cgns::Zone& parent );
+    Section( const Parent& parent );
 
     const Parent& parent() const { return m_parent; }
     int index() const { return m_index; }

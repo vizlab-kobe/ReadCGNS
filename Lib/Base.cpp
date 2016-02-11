@@ -13,7 +13,7 @@
  */
 /*****************************************************************************/
 #include "Base.h"
-#include "CGNS.h"
+#include "CGNSData.h"
 
 
 namespace local
@@ -22,7 +22,7 @@ namespace local
 namespace cgns
 {
 
-Base::Base( const local::CGNS& parent ):
+Base::Base( const Base::Parent& parent ):
     m_parent( parent ),
     m_index( 0 ),
     m_id( 0.0 ),

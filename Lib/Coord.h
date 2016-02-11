@@ -42,7 +42,7 @@ private:
     kvs::AnyValueArray m_coords;
 
 public:
-    Coord( const cgns::Zone& parent );
+    Coord( const Parent& parent );
 
     const Parent& parent() const { return m_parent; }
     int index() const { return m_index; }

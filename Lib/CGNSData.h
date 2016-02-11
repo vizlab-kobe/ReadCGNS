@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /**
- *  @file   CGNS.h
+ *  @file   CGNSData.h
  *  @author Naohisa Sakamoto
  */
 /*----------------------------------------------------------------------------
@@ -25,7 +25,7 @@
 namespace local
 {
 
-class CGNS
+class CGNSData
 {
 private:
     int m_handler;
@@ -33,8 +33,8 @@ private:
     std::vector<cgns::Base> m_bases;
 
 public:
-    CGNS();
-    CGNS( const std::string& filename );
+    CGNSData();
+    CGNSData( const std::string& filename );
 
     int handler() const { return m_handler; }
     float version() const { return m_version; }
