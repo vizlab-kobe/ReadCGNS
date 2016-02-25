@@ -26,3 +26,9 @@ After compiling ReadCGNS as static library, a test code can be compiled and exec
     $ kvsmake -G
     $ kvsmake
     $ ./Test data.cgns
+    Version: 3.13
+    Num. of bases: 5
+        Base ID: 2
+        Name: internalMesh
+        Cell dim: 3
+        ...
