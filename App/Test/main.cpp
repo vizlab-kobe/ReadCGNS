@@ -6,7 +6,7 @@
 int main( int argc, char** argv )
 {
     std::string filename( argv[1] );
-    local::CGNSData data( filename.c_str() );
+    ReadCGNS::CGNSData data( filename.c_str() );
     data.print( std::cout );
 
     return 0;

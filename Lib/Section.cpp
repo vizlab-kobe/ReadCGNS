@@ -18,7 +18,7 @@
 #include "Zone.h"
 
 
-namespace local
+namespace ReadCGNS
 {
 
 namespace cgns
@@ -72,4 +72,4 @@ bool Section::read( const int sindex )
 
 } // end of namespace cgns
 
-} // end of namespace local
+} // end of namespace ReadCGNS

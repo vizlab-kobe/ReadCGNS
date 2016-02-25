@@ -17,7 +17,7 @@
 #include "CGNSData.h"
 
 
-namespace local
+namespace ReadCGNS
 {
 
 namespace cgns
@@ -192,4 +192,4 @@ bool Zone::read( const int zindex )
 
 } // end of namespace cgns
 
-} // end of namespace local
+} // end of namespace ReadCGNS

@@ -19,7 +19,7 @@
 #include "Solution.h"
 
 
-namespace local
+namespace ReadCGNS
 {
 
 namespace cgns
@@ -96,4 +96,4 @@ bool Field::read( const int findex, const cgsize_t* range_min, const cgsize_t* r
 
 } // end of namespace cgns
 
-} // end of namespace local
+} // end of namespace ReadCGNS

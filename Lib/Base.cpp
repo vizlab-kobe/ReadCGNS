@@ -16,7 +16,7 @@
 #include "CGNSData.h"
 
 
-namespace local
+namespace ReadCGNS
 {
 
 namespace cgns
@@ -77,4 +77,4 @@ bool Base::read( const int bindex )
 
 } // end of namespace cgns
 
-} // end of namespace local
+} // end of namespace ReadCGNS

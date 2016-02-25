@@ -22,7 +22,7 @@
 #include <kvs/Indent>
 
 
-namespace local
+namespace ReadCGNS
 {
 
 class CGNSData
@@ -46,4 +46,4 @@ public:
     bool read( const std::string& filename );
 };
 
-} // end of namespace local
+} // end of namespace ReadCGNS

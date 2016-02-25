@@ -2,7 +2,6 @@
 /**
  *  @file   Grid.cpp
  *  @author Naohisa Sakamoto
- *  @brief  
  */
 /*----------------------------------------------------------------------------
  *
@@ -20,7 +19,7 @@
 #include "Zone.h"
 
 
-namespace local
+namespace ReadCGNS
 {
 
 namespace cgns
@@ -53,4 +52,4 @@ bool Grid::read( const int gindex )
 
 } // end of namespace cgns
 
-} // end of namespace local
+} // end of namespace ReadCGNS

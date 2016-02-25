@@ -22,7 +22,7 @@
 #include "Zone.h"
 
 
-namespace local
+namespace ReadCGNS
 {
 
 class CGNSData;
@@ -33,7 +33,7 @@ namespace cgns
 class Base
 {
 public:
-    typedef local::CGNSData Parent;
+    typedef ReadCGNS::CGNSData Parent;
 
 private:
     const Parent& m_parent;
@@ -66,4 +66,4 @@ public:
 
 } // end of namespace cgns
 
-} // end of namespace local
+} // end of namespace ReadCGNS

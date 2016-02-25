@@ -18,7 +18,7 @@
 #include "Zone.h"
 
 
-namespace local
+namespace ReadCGNS
 {
 
 namespace cgns
@@ -76,4 +76,4 @@ bool Coord::read( const int cindex, const cgsize_t range_min, const cgsize_t ran
 
 } // end of namespace cgns
 
-} // end of namespace local
+} // end of namespace ReadCGNS

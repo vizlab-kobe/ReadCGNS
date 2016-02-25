@@ -17,7 +17,7 @@
 #include <kvs/Message>
 
 
-namespace local
+namespace ReadCGNS
 {
 
 CGNSData::CGNSData():
@@ -70,4 +70,4 @@ bool CGNSData::read( const std::string& filename )
     return true;
 }
 
-} // end of namespace local
+} // end of namespace ReadCGNS

@@ -2,7 +2,6 @@
 /**
  *  @file   Solution.cpp
  *  @author Naohisa Sakamoto
- *  @brief  
  */
 /*----------------------------------------------------------------------------
  *
@@ -19,7 +18,7 @@
 #include "Zone.h"
 
 
-namespace local
+namespace ReadCGNS
 {
 
 namespace cgns
@@ -125,4 +124,4 @@ bool Solution::read( const int sindex )
 
 } // end of namespace cgns
 
-} // end of namespace local
+} // end of namespace ReadCGNS

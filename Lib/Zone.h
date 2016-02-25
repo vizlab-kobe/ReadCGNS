@@ -25,7 +25,7 @@
 #include <kvs/Indent>
 
 
-namespace local
+namespace ReadCGNS
 {
 
 namespace cgns
@@ -83,4 +83,4 @@ public:
 
 } // end of namespace cgns
 
-} // end of namespace local
+} // end of namespace ReadCGNS
